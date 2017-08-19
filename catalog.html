@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Нердс: магазин готовых шаблонов</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="main-menu">
+        <a href="#">
+          <img class="logo" src="http://placehold.it/150x100" alt="">
+        </a>
+        <ul class="main-nav">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a>Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <form action="filter.php" method="post">
+        <fieldset>
+          <legend>Стоимость:</legend>
+            <input type="range">
+            <span>от</span>
+            <input type="text" placeholder="0">
+            <span>до</span>
+            <input type="text" placeholder="15 000">
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="radio" name="grid" id="grid-adaptive" checked>
+              <label for="grid-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="grid" id="grid-fixed">
+              <label for="grid-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="grid" id="grid-rubber">
+              <label for="grid-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="features"   id="features-slider"   checked>
+              <label for="features-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="features"   id="features-advantages">
+              <label for="features-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="features" id="features-news"     checked>
+              <label for="features-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="features" id="features-gallery">
+              <label for="features-gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="features" id="features-basket">
+              <label for="features-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="btn" type="submit">Показать</button>
+      </form>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend>Сортировать:</legend>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+          <li><a href="#">Вверх</a></li>
+          <li><a href="#">Вниз</a></li>
+        </ul>
+      </fieldset>
+      <section>
+        <article class="product-item">
+          <img src="http://placehold.it/150x100" alt="Седона: Информационный сайт для туристов">
+        </article>
+        <article class="product-item">
+          <img src="http://placehold.it/150x100" alt="Пинк: Сайт графического приложения">
+        </article>
+        <article class="product-item">
+          <img src="http://placehold.it/150x100" alt="Бородинский: Сайт барбершопа">
+        </article>
+        <article class="product-item">
+          <img src="http://placehold.it/150x100" alt="Мишка: Сайт вязанных изделий ручной работы">
+        </article>
+        <article class="product-item">
+          <img src="http://placehold.it/150x100" alt="А+: Сайт онлайн образования">
+        </article>
+        <article class="product-item">
+          <img src="http://placehold.it/150x100" alt="Крафт: Сайт крафтового кваса">
+        </article>
+      </section>
+      <nav class="page-nav">
+        <ol>
+          <li class="page-nav-item btn"><a>1</a></li>
+          <li class="page-nav-item btn"><a href="#">2</a></li>
+          <li class="page-nav-item btn"><a href="#">3</a></li>
+          <li class="page-nav-item btn"><a href="#">Следующая</a></li>
+        </ol>
+      </nav>
+    </div>
+  </main>
+
+  <footer>
+    <div class="containet">
+      <section class="map"></section>
+      <section class="socials">
+        <ul>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Fasebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <p class="title">Давайте дружить, это выгодно!</p>
+        <p class="subtitle">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
